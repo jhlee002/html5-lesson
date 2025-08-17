@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경색, 배경 범위 지정</title>
+    <style>
+        * {margin:0; padding:0;}
+        #clip-border { background-clip: border-box; }
+        #clip-padding { background-clip: padding-box; }
+        #clip-content { background-clip: content-box; }
+        .box {
+            width: 200px;
+            height: 200px;
+            padding: 25px;
+            border: 5px dotted black;
+            background-color: azure;
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="clip-border" class="box"><h1>레드향</h1></div>
+        <div id="clip-padding" class="box"><h1>레드향</h1></div>
+        <div id="clip-content" class="box"><h1>레드향</h1></div>
+    </div>
+</body>
+</html>
